@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style2.css">
+    <title></title>
+</head>
+<body>
+    <div id="container">
+        
+    <div class="inner-container" id="toggle-container" >
+        <div class="scrollbar"></div>
+    </div>
+        <div class="inner-container" >
+        <div class="toggle" id="Facebook">
+            <p>Facebook</p>
+        </div>
+        <div class="toggle" id="Instagram">
+            <p>Instagram</p>
+        </div>
+        <div class="toggle" id="Twitter">
+            <p>Twitter</p>
+        </div>
+        <div class="toggle" id="Google">
+            <p>Google</p>
+        </div>
+        <div class="toggle" id="Snapchat">
+            <p>Snapchat</p>
+        </div>
+    </div>
+
+</div>
+
+<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.2.4.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+  $("#Instagram").click(function(){
+    $(".scrollbar").animate({
+        marginLeft:'20%'
+   });
+});
+
+  $("#Facebook").click(function(){
+    $(".scrollbar").animate({
+        marginLeft:'0%'
+   });
+});
+
+  $("#Snapchat").click(function(){
+    $(".scrollbar").animate({
+        marginLeft:'80%'
+   });
+});
+
+  $("#Google").click(function(){
+    $(".scrollbar").animate({
+        marginLeft:'60%'
+   });
+});
+
+  $("#Twitter").click(function(){
+    $(".scrollbar").animate({
+        marginLeft:'40%'
+   });
+});
+});
+
+/*
+document.getElementById('Facebook').addEventListener('click', function(){
+     
+});
+document.getElementById('Instagram').addEventListener('click', function(){
+       alert('here');
+});
+document.getElementById('Twitter').addEventListener('click', function(){
+       console.log('111');
+});
+document.getElementById('Google').addEventListener('click', function(){
+        
+});
+document.getElementById('Snapchat').addEventListener('click', function(){
+     
+});
+
+
+toggle.addEventListener('click', function() {
+    toggleNumber = !toggleNumber;
+    console.log("abc");
+    if (toggleNumber) {
+        toggleContainer.style.clipPath = 'inset(0 0 0 50%)';
+        toggleContainer.style.backgroundColor = 'linear-gradient(to right,#644b8a , #9b2e4e)';
+    } else {
+        toggleContainer.style.clipPath = 'inset(0 50% 0 0)';
+        toggleContainer.style.backgroundColor = 'dodgerblue';
+    }
+    console.log(toggleNumber)
+});*/
+</script>
+</body>
+</html>
