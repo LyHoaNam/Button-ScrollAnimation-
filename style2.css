@@ -60,6 +60,9 @@ a:hover {
     display: inline-grid;
     box-sizing: border-box;
 }
+.toggle :hover {
+    font-size: 12px;
+}
 .toggle p {
     margin: auto;
 }

@@ -6,64 +6,64 @@
 </head>
 <body>
     <div id="container">
-        
-    <div class="inner-container" id="toggle-container" >
-        <div class="scrollbar"></div>
-    </div>
+
+        <div class="inner-container" id="toggle-container" >
+            <div class="scrollbar"></div>
+        </div>
         <div class="inner-container" >
-        <div class="toggle" id="Facebook">
-            <p>Facebook</p>
+            <div class="toggle" id="Facebook">
+                <p>Facebook</p>
+            </div>
+            <div class="toggle" id="Instagram">
+                <p>Instagram</p>
+            </div>
+            <div class="toggle" id="Twitter">
+                <p>Twitter</p>
+            </div>
+            <div class="toggle" id="Google">
+                <p>Google</p>
+            </div>
+            <div class="toggle" id="Snapchat">
+                <p>Snapchat</p>
+            </div>
         </div>
-        <div class="toggle" id="Instagram">
-            <p>Instagram</p>
-        </div>
-        <div class="toggle" id="Twitter">
-            <p>Twitter</p>
-        </div>
-        <div class="toggle" id="Google">
-            <p>Google</p>
-        </div>
-        <div class="toggle" id="Snapchat">
-            <p>Snapchat</p>
-        </div>
+
     </div>
 
-</div>
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.2.4.min.js"></script>
 
-<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.2.4.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+          $("#Instagram").click(function(){
+            $(".scrollbar").animate({
+                marginLeft:'20%'
+            });
+        });
 
-<script type="text/javascript">
-$(document).ready(function(){
-  $("#Instagram").click(function(){
-    $(".scrollbar").animate({
-        marginLeft:'20%'
-   });
-});
+          $("#Facebook").click(function(){
+            $(".scrollbar").animate({
+                marginLeft:'0%'
+            });
+        });
 
-  $("#Facebook").click(function(){
-    $(".scrollbar").animate({
-        marginLeft:'0%'
-   });
-});
+          $("#Snapchat").click(function(){
+            $(".scrollbar").animate({
+                marginLeft:'80%'
+            });
+        });
 
-  $("#Snapchat").click(function(){
-    $(".scrollbar").animate({
-        marginLeft:'80%'
-   });
-});
+          $("#Google").click(function(){
+            $(".scrollbar").animate({
+                marginLeft:'60%'
+            });
+        });
 
-  $("#Google").click(function(){
-    $(".scrollbar").animate({
-        marginLeft:'60%'
-   });
-});
-
-  $("#Twitter").click(function(){
-    $(".scrollbar").animate({
-        marginLeft:'40%'
-   });
-});
-});
+          $("#Twitter").click(function(){
+            $(".scrollbar").animate({
+                marginLeft:'40%'
+            });
+        });
+        });
 
 /*
 document.getElementById('Facebook').addEventListener('click', function(){
